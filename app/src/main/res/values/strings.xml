@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Benim Kuaforum</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="move_to_detail_screen">Move to Detail Screen</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="copy_text">Copy Text</string>
+    <string name="copy_text_from_clipboard">Copy text from clipboard</string>
+    <string name="get_text_from_string_resource">Get Text From String Resource</string>
+    <string name="click_here">Click here</string>
+    <string name="clickable_text">Clickable Text</string>
+    <string name="hello">Hello</string>
+    <string name="child_composable_function_using_composition_local">Child Composable function using composition local</string>
+    <string name="hello_world">Hello world</string>
+    <string name="animated_text">Animated Text</string>
+    <string name="show_hide">Show/Hide</string>
+    <string name="custom_font_text">Custom Font Text</string>
+    <string name="selectall">Select All</string>
+    <string name="offset_content">Offset Content</string>
+    <string name="this_is_an_example_of_basic_marquee_text_in_jetpack_compose">This is an example of basic marquee text in jetpack compose</string>
+    <string name="basicmarqueetest">basicMarqueeTest</string>
+    <string name="bottombar_app">BottomApp Bar</string>
+    <string name="app_bar">App Bar</string>
+    <string name="margin_demo">Margin Demo</string>
+    <string name="padding_from_baseline_example">Padding from BaseLine</string>
+    <string name="padding_from_example">Padding From Example</string>
+    <string name="norma_padding">Norma Padding</string>
+    <string name="weight_property">Hello , This is an example of weight property in Jetpack Compose</string>
+    <string name="hello_compose">Hello, Compose!</string>
+    <string name="hello_world_how_are_you">Hello world , How are you ?</string>
+</resources>
