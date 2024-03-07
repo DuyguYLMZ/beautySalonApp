@@ -78,7 +78,7 @@ fun RandevuScreen() {
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
-            text = "Randevu View",
+            text = "Randevu ",
             fontWeight = FontWeight.Bold,
             color = Color.Black,
             modifier = Modifier.align(Alignment.CenterHorizontally),
