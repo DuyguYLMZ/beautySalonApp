@@ -50,6 +50,6 @@ val androidNameList = listOf(
     AndroidVersion(R.drawable.campaign1, "Marshmallow", "October 5, 2015"),
     AndroidVersion(R.drawable.campaign2, "Nougat", "August 22, 2016"),
     AndroidVersion(R.drawable.campaign3, "Oreo", "August 21, 2017"),
-    AndroidVersion(R.drawable.campaign4, "Pie", "August 6, 2018"),
+    AndroidVersion(R.drawable.campaign4, "Pie", "August 6, 2019"),
     AndroidVersion(R.drawable.campaign5, "Android 10", "September 3, 2019")
 )
