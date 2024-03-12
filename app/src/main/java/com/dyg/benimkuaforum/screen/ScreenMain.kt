@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.dyg.benimkuaforum.util.Routes
+import com.dyg.benimkuaforum.util.route.Routes
 import com.example.bottomnavbarexample.Dashboard
 
 @RequiresApi(Build.VERSION_CODES.O)

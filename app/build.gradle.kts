@@ -82,4 +82,5 @@ dependencies {
     implementation ("androidx.compose.material:material-ripple:$compose_version")
     implementation ("com.google.accompanist:accompanist-pager:0.28.0")
     implementation ("com.google.accompanist:accompanist-pager-indicators:0.28.0")
+    implementation ("com.google.maps.android:maps-compose:4.3.3")
 }

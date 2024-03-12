@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.dyg.benimkuaforum.ui.theme.Purple700
-import com.dyg.benimkuaforum.util.Routes
+import com.dyg.benimkuaforum.util.route.Routes
 
 
 @OptIn(ExperimentalMaterial3Api::class)
