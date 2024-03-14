@@ -1,4 +1,4 @@
-package com.dyg.benimkuaforum.util
+package com.dyg.benimkuaforum.util.route
 
 sealed class Routes(val route: String) {
     object Splash : Routes("Splash")

@@ -17,8 +17,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
-import com.dyg.benimkuaforum.util.Routes
+import com.dyg.benimkuaforum.util.route.Routes
 import androidx.compose.foundation.layout.*
 import kotlinx.coroutines.delay
 

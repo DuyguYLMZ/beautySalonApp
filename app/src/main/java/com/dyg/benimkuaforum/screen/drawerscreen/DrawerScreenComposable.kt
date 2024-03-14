@@ -7,8 +7,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.dyg.benimkuaforum.screen.CampaignsScreen
+import com.dyg.benimkuaforum.screen.ContactScreen
 import com.dyg.benimkuaforum.screen.Home
-import com.dyg.benimkuaforum.screen.MusicScreen
 import com.dyg.benimkuaforum.screen.NotificationsScreen
 import com.dyg.benimkuaforum.screen.ProfileScreen
 import com.dyg.benimkuaforum.screen.RandevuScreen
@@ -26,16 +26,16 @@ fun DrawerScreenComposable(navController: NavHostController) {
         }
 
         composable(randevuTab.title) {
-            RandevuScreen()
+            RandevuScreen(navController)
         }
         composable(alertsTab.title) {
-            NotificationsScreen()
+            NotificationsScreen(navController)
         }
         composable(NavDrawerItem.Home.route) {
             Home()
         }
         composable(NavDrawerItem.Notifications.route) {
-            NotificationsScreen()
+            NotificationsScreen(navController)
         }
         composable(NavDrawerItem.Profile.route) {
             ProfileScreen()
@@ -44,7 +44,7 @@ fun DrawerScreenComposable(navController: NavHostController) {
             CampaignsScreen(navController)
         }
         composable(NavDrawerItem.Contact.route) {
-            MusicScreen()
+            ContactScreen()
         }
     }
 }
