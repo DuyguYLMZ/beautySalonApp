@@ -1,10 +1,9 @@
-package com.dyg.benimkuaforum.screen.commonscreen.model
+package com.dyg.benimkuaforum.screen
 
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
@@ -23,7 +22,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.dyg.benimkuaforum.ui.theme.Purple200
 import com.dyg.benimkuaforum.ui.theme.Purple40
-import com.dyg.benimkuaforum.util.route.Routes
 import java.time.LocalDate
 import java.time.format.TextStyle
 import java.util.*
@@ -147,7 +145,7 @@ fun Category(): String {
             readOnly = true,
             value = selectedOptionText,
             onValueChange = { },
-            label = { Text("Uzman") },
+            label = { Text("İşlemler") },
             trailingIcon = {
                 ExposedDropdownMenuDefaults.TrailingIcon(
                     expanded = expanded
@@ -237,6 +235,8 @@ fun Teams(): String {
     return crewName
 }
 
+
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun AppoinmentDay(
     dateScrollState: ScrollState,
@@ -254,7 +254,7 @@ fun AppoinmentDay(
         for (i in 0..365) {
             val date = today.plusDays(i.toLong())
             DateComp(
-                date = date, isSelected = today == date
+                date = date, isSelected = selectedDate.value == date
             ) {
                 selectedDate.value = it
             }

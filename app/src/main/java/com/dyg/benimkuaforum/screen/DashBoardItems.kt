@@ -50,6 +50,7 @@ import com.dyg.benimkuaforum.ui.theme.Purple200
 import com.dyg.benimkuaforum.ui.theme.White
 import com.dyg.benimkuaforum.util.homeslider.AutoSlidingCarousel
 import com.dyg.benimkuaforum.util.homeslider.circularIcons
+import com.dyg.benimkuaforum.util.route.Routes
 
 @Composable
 fun Team(){
@@ -219,6 +220,8 @@ val images = arrayOf(
     R.drawable.campaign3,
     R.drawable.campaign4,
     R.drawable.campaign5
+
+
 )
 @Composable
 fun Banners() {
@@ -241,9 +244,11 @@ fun Banners() {
                         contentDescription = null,
                         contentScale = ContentScale.Crop,
                         modifier = Modifier.height(150.dp)
+
                     )
                 }
             )
         }
     }
+
 }

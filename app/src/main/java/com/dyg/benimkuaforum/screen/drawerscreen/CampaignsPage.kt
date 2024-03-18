@@ -1,11 +1,13 @@
 package com.dyg.benimkuaforum.screen.drawerscreen
 
 import androidx.annotation.DrawableRes
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -14,8 +16,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import coil.compose.AsyncImage
+import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import com.dyg.benimkuaforum.R
+import com.dyg.benimkuaforum.util.route.Routes
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -31,13 +35,14 @@ fun CampaignsPage(navController: NavController) {
                     .build(),
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
-                modifier = Modifier.height(150.dp)
+                modifier = Modifier.height(150.dp).clickable {
+                    navController.navigate(Routes.CampaignsPage1.route)
+                }
             )
             Spacer(modifier = Modifier.height(7.dp))
         }
     }
 }
-
 
 data class AndroidVersion(
     @DrawableRes val imageResourceId: Int,
@@ -53,3 +58,4 @@ val androidNameList = listOf(
     AndroidVersion(R.drawable.campaign4, "Pie", "August 6, 2019"),
     AndroidVersion(R.drawable.campaign5, "Android 10", "September 3, 2019")
 )
+

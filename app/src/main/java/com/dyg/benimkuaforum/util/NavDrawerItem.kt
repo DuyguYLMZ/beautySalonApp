@@ -53,6 +53,7 @@ sealed class NavDrawerItem(var route: String, var icon: Int, var title: String) 
     object Profile : NavDrawerItem("Profile", R.drawable.beuaty01, "Profile")
     object Campaigns : NavDrawerItem("Campaigns", R.drawable.beuaty01, "Kampanyalar")
     object Contact : NavDrawerItem("Contact", R.drawable.beuaty01, "İletişim")
+    object CampaignsPage1 : NavDrawerItem("CampaignsPage1", R.drawable.beuaty01, "CampaignsPage1")
 }
 
 @Composable

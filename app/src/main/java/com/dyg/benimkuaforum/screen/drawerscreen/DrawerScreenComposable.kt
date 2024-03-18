@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.dyg.benimkuaforum.screen.CampaignsPage1
 import com.dyg.benimkuaforum.screen.CampaignsScreen
 import com.dyg.benimkuaforum.screen.ContactScreen
 import com.dyg.benimkuaforum.screen.Home
@@ -45,6 +46,9 @@ fun DrawerScreenComposable(navController: NavHostController) {
         }
         composable(NavDrawerItem.Contact.route) {
             ContactScreen()
+        }
+        composable(NavDrawerItem.CampaignsPage1.route) {
+            CampaignsPage1()
         }
     }
 }
